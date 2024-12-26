@@ -12,7 +12,7 @@ jobs:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
     uses: xoanmm/actions/.github/workflows/lint_python.yml@v0
     with:
-      python-version: '3.8.11'
+      python-version: '3.8'
 
   unit-tests:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
