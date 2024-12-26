@@ -1,3 +1,11 @@
+## [1.0.26](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.25...v1.0.26) (2024-12-26)
+
+
+### Bug Fixes
+
+* add new way of use release workflow ([e15bbf9](https://github.com/xoanmm/python-app-devsecops/commit/e15bbf9d2c6157291f8031d1e874c6f0bb6bc0e3))
+* update github actions permissions ([7c7ca64](https://github.com/xoanmm/python-app-devsecops/commit/7c7ca6428cadeeac855009cef084b06c6076478c))
+
 ## [1.0.25](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.24...v1.0.25) (2024-12-10)
 
 
