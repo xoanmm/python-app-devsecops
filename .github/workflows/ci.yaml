@@ -10,33 +10,7 @@ name: CI
 jobs:
   lint-python-code:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Upgrade pip
-        run: pip3 install --upgrade pip
-
-      - name: Install necessary dependencies
-        run: pip3 install -r requirements.txt
-
-      - name: Run pre-commit
-        uses: pre-commit/action@v2.0.3
-        with:
-          extra_args: "-a -v"
+    uses: xoanmm/actions/.github/workflows/lint_python.yml@v0
 
   unit-tests:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
