@@ -1,3 +1,12 @@
+## [1.0.27](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.26...v1.0.27) (2024-12-26)
+
+
+### Bug Fixes
+
+* add new way to use lint python ([a342dbd](https://github.com/xoanmm/python-app-devsecops/commit/a342dbda7a687712ad50a7fb84fdc42d8af68d8b))
+* change python version ([df936a2](https://github.com/xoanmm/python-app-devsecops/commit/df936a2ba754dac188e37dde0cbb64545b9b386b))
+* change python version ([82ec440](https://github.com/xoanmm/python-app-devsecops/commit/82ec440499fbc0f63eba9ff3a324bb373903ce43))
+
 ## [1.0.26](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.25...v1.0.26) (2024-12-26)
 
 
