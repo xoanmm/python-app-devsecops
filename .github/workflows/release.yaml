@@ -20,6 +20,13 @@ jobs:
   semantic-release:
     uses: xoanmm/actions/.github/workflows/release.yml@v0
     secrets: inherit
+    permissions:
+      contents: write
+      packages: write
+      pull-requests: read
+      issues: write
+      id-token: write
+      attestations: write
     with:
       dockerfile: Dockerfile
       docker-context: .
