@@ -19,4 +19,4 @@ python-multipart==0.0.18
 six==1.16.0
 ujson==5.10.0
 uvicorn==0.30.1
-httpx==0.27.0
+httpx==0.28.1
