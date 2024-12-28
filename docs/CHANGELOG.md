@@ -1,3 +1,11 @@
+## [1.0.29](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.28...v1.0.29) (2024-12-28)
+
+
+### Bug Fixes
+
+* add necessary condition ([24cd395](https://github.com/xoanmm/python-app-devsecops/commit/24cd395c5c68d5f7a1d5e5b135207840823eb876))
+* add new way of use sonar cloud scan checks ([2ce112d](https://github.com/xoanmm/python-app-devsecops/commit/2ce112d3ef3b67dd5829eb6e7a39d8a5de9fb440))
+
 ## [1.0.28](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.27...v1.0.28) (2024-12-28)
 
 
