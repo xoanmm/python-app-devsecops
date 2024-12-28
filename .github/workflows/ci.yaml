@@ -12,7 +12,8 @@ jobs:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
     uses: xoanmm/actions/.github/workflows/lint_python.yml@v0
     with:
-      python-version: '3.8'
+      python-version: '3.12'
+      requirements-files: 'requirements.txt requirements-tests.txt'
 
   unit-tests:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
@@ -20,7 +21,8 @@ jobs:
       - lint-python-code
     uses: xoanmm/actions/.github/workflows/unit_tests_python.yml@v0
     with:
-      python-version: '3.8'
+      python-version: '3.12'
+      requirements-files: 'requirements.txt requirements-tests.txt'
 
   security-checks:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"

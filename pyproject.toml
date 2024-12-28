@@ -1,0 +1,2 @@
+[tool.deptry]
+requirements_files_dev = ["requirements.txt", "requirements-tests.txt"]
