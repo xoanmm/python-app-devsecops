@@ -12,7 +12,7 @@ charset-normalizer==3.3.2
 requests==2.32.3
 urllib3==2.2.2
 MarkupSafe==2.1.5
-httptools==0.6.1
+httptools==0.6.4
 itsdangerous==2.2.0
 orjson==3.10.5
 python-multipart==0.0.18
