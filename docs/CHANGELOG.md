@@ -1,3 +1,10 @@
+## [1.0.28](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.27...v1.0.28) (2024-12-28)
+
+
+### Bug Fixes
+
+* update workflow of unit tests using reusable workflow ([e563273](https://github.com/xoanmm/python-app-devsecops/commit/e563273e6963c656188f98c031c44ccfb2a21490))
+
 ## [1.0.27](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.26...v1.0.27) (2024-12-26)
 
 
