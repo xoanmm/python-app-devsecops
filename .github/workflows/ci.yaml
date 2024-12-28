@@ -26,30 +26,5 @@ jobs:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
     needs:
       - unit-tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Download artifact for coverage
-        uses: actions/download-artifact@v4.1.7
-        with:
-          name: coverage
-
-      - name: Get repository basename
-        run: |
-            echo "REPO_NAME=$(basename ${{ github.repository }})" >> $GITHUB_ENV
-
-      - name: SonarCloud Scan
-        uses: sonarsource/sonarqube-scan-action@v4.1.0
-        with:
-          args: >
-            -Dsonar.projectKey=${{ github.repository_owner }}_${{ env.REPO_NAME }}
-            -Dsonar.organization=${{ github.repository_owner }}
-            -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.test.exclusions=tests/**
-            -Dsonar.tests=tests/
-            -Dsonar.verbose=true
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: xoanmm/actions/.github/workflows/sonar_cloud_scan_python.yml@v0
+    secrets: inherit
