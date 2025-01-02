@@ -1,6 +1,7 @@
 {
     "name": "python-app-masterclass-devsecops",
     "dependencies": {
+        "@semantic-release/commit-analyzer": "13.0.0",
         "@semantic-release/exec": "6.0.3",
         "@semantic-release/git": "10.0.1",
         "@semantic-release/github": "10.3.5",
@@ -13,7 +14,26 @@
             "main"
         ],
         "plugins": [
-            "@semantic-release/commit-analyzer",
+            [
+                "@semantic-release/commit-analyzer",
+                {
+                    "preset": "angular",
+                    "releaseRules": [
+                        { "type": "docs", "scope": "README", "release": "patch" },
+                        { "type": "refactor", "release": "patch" },
+                        { "type": "style", "release": "patch" },
+                        { "breaking": true, "release": "major" },
+                        { "revert": true, "release": "patch" },
+                        { "type": "feat", "release": "minor" },
+                        { "type": "fix", "release": "patch" },
+                        { "type": "chore", "release": "patch" },
+                        { "type": "docs", "release": "patch" }
+                    ],
+                    "parserOpts": {
+                        "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES"]
+                    }
+                }
+            ],
             "@semantic-release/github",
             "@semantic-release/release-notes-generator",
             [
