@@ -24,9 +24,18 @@ jobs:
       python-version: '3.12'
       requirements-files: 'requirements.txt requirements-tests.txt'
 
+  validate-dockerfile:
+    if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
+    needs:
+      - lint-python-code
+      - unit-tests
+    uses: xoanmm/actions/.github/workflows/validate_dockerfile.yml@v0
+
   security-checks:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
     needs:
+      - lint-python-code
+      - validate-dockerfile
       - unit-tests
     uses: xoanmm/actions/.github/workflows/sonar_cloud_scan_python.yml@v0
     secrets: inherit
