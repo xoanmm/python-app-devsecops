@@ -38,4 +38,6 @@ jobs:
       - validate-dockerfile
       - unit-tests
     uses: xoanmm/actions/.github/workflows/sonar_cloud_scan_python.yml@v0
+    with:
+      sonar-qualitygate-wait: true
     secrets: inherit
