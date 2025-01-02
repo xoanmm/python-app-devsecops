@@ -1,3 +1,5 @@
+## [1.0.31](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.30...v1.0.31) (2025-01-02)
+
 ## [1.0.30](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.29...v1.0.30) (2025-01-02)
 
 
