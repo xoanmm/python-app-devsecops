@@ -8,9 +8,9 @@ WORKDIR /service/app
 COPY requirements.txt /service/app
 COPY application /service/app/application
 
-RUN apk --no-cache add curl build-base npm
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN apk --no-cache add curl build-base npm && \
+      pip install --upgrade pip && \
+      pip install -r requirements.txt
 
 EXPOSE 8081
 
