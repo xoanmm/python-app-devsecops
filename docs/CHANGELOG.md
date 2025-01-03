@@ -1,3 +1,12 @@
+## [1.0.35](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.34...v1.0.35) (2025-01-03)
+
+
+### Bug Fixes
+
+* change environment variable assign ([0bf74fb](https://github.com/xoanmm/python-app-devsecops/commit/0bf74fb9e3d24278933b44a7e15212e82bbde705))
+* change order of package installation in Dockerfile ([f0a89ef](https://github.com/xoanmm/python-app-devsecops/commit/f0a89efd0bf2244cc7d139c2748494451aed5dca))
+* replace shell with exec form ([38e4f4f](https://github.com/xoanmm/python-app-devsecops/commit/38e4f4f3d9c273880cfb023e766d56a7fde43472))
+
 ## [1.0.34](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.33...v1.0.34) (2025-01-03)
 
 
