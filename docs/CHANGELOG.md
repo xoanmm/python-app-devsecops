@@ -1,3 +1,11 @@
+## [1.0.37](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.36...v1.0.37) (2025-01-03)
+
+
+### Bug Fixes
+
+* add necessary dependency for testing ([776a44c](https://github.com/xoanmm/python-app-devsecops/commit/776a44c72d9af648055f3ded1dee1983446be147))
+* **deps:** update dependency @semantic-release/github to v11 ([#26](https://github.com/xoanmm/python-app-devsecops/issues/26)) ([54439d3](https://github.com/xoanmm/python-app-devsecops/commit/54439d3f090f4e9341c1335425a365934df1b9b7))
+
 ## [1.0.36](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.35...v1.0.36) (2025-01-03)
 
 
