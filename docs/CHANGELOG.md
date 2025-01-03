@@ -1,3 +1,10 @@
+## [1.0.34](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.33...v1.0.34) (2025-01-03)
+
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo ([#30](https://github.com/xoanmm/python-app-devsecops/issues/30)) ([fa0dd58](https://github.com/xoanmm/python-app-devsecops/commit/fa0dd5823a425e85448c9420029213b44ba54981))
+
 ## [1.0.33](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.32...v1.0.33) (2025-01-03)
 
 ## [1.0.32](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.31...v1.0.32) (2025-01-03)
