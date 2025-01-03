@@ -1,3 +1,10 @@
+## [1.0.32](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.31...v1.0.32) (2025-01-03)
+
+
+### Bug Fixes
+
+* add non-root user for image ([#31](https://github.com/xoanmm/python-app-devsecops/issues/31)) ([2d3fae0](https://github.com/xoanmm/python-app-devsecops/commit/2d3fae060500927d55ea4af51b4bfc88bc0da0cf))
+
 ## [1.0.31](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.30...v1.0.31) (2025-01-02)
 
 ## [1.0.30](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.29...v1.0.30) (2025-01-02)
