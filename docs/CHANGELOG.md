@@ -1,3 +1,10 @@
+## [1.0.38](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.37...v1.0.38) (2025-01-03)
+
+
+### Bug Fixes
+
+* update python version ([879822a](https://github.com/xoanmm/python-app-devsecops/commit/879822a10362771e672dc466f9dc11e6b1f4b720))
+
 ## [1.0.37](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.36...v1.0.37) (2025-01-03)
 
 
