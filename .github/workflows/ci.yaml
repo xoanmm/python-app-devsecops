@@ -12,7 +12,7 @@ jobs:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
     uses: xoanmm/actions/.github/workflows/lint_python.yml@v0
     with:
-      python-version: '3.12'
+      python-version: '3.13'
       requirements-files: 'requirements.txt requirements-tests.txt'
 
   unit-tests:
@@ -21,7 +21,7 @@ jobs:
       - lint-python-code
     uses: xoanmm/actions/.github/workflows/unit_tests_python.yml@v0
     with:
-      python-version: '3.12'
+      python-version: '3.13'
       requirements-files: 'requirements.txt requirements-tests.txt'
 
   validate-dockerfile:
@@ -39,6 +39,6 @@ jobs:
       - unit-tests
     uses: xoanmm/actions/.github/workflows/sonar_cloud_scan_python.yml@v0
     with:
-      python-version: '3.12'
+      python-version: '3.13'
       sonar-qualitygate-wait: true
     secrets: inherit
