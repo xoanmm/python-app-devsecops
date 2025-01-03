@@ -1,3 +1,10 @@
+## [1.0.36](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.35...v1.0.36) (2025-01-03)
+
+
+### Bug Fixes
+
+* add python-version input for sonar cloud scan ([047055f](https://github.com/xoanmm/python-app-devsecops/commit/047055fb7eebdaefb5e8db45a62548ce023260d7))
+
 ## [1.0.35](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.34...v1.0.35) (2025-01-03)
 
 
