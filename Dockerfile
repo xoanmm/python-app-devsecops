@@ -1,5 +1,8 @@
 FROM python:3.13-alpine3.21
 
+RUN addgroup -S nonroot \
+    && adduser -S nonroot -G nonroot
+
 WORKDIR /service/app
 
 COPY requirements.txt /service/app
@@ -15,5 +18,7 @@ ENV PYTHONUNBUFFERED 1
 
 HEALTHCHECK --timeout=30s --interval=1m30s --retries=5 \
   CMD curl -s --fail http://localhost:8081/health || exit 1
+
+USER nonroot
 
 CMD ["python3", "-u", "application/app.py"]
