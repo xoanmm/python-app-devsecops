@@ -8,7 +8,7 @@ WORKDIR /service/app
 COPY requirements.txt /service/app
 COPY application /service/app/application
 
-RUN apk --no-cache add build-base curl npm && \
+RUN apk --no-cache --update add build-base curl npm && \
       pip install --upgrade pip && \
       pip install -r requirements.txt
 
