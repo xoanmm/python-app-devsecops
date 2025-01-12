@@ -30,6 +30,8 @@ jobs:
       - lint-python-code
       - unit-tests
     uses: xoanmm/actions/.github/workflows/validate_dockerfile.yml@v0
+    with:
+      trivy-skip-dirs: 'usr/local/lib/python3.13/site-packages/*'
 
   security-checks:
     if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"

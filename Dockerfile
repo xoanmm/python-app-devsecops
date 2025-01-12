@@ -12,9 +12,9 @@ RUN apk --no-cache --update add build-base curl npm && \
       pip install --upgrade pip && \
       pip install -r requirements.txt
 
-EXPOSE 8081
-
 ENV PYTHONUNBUFFERED=1
+
+EXPOSE 8081
 
 HEALTHCHECK --timeout=30s --interval=1m30s --retries=5 \
   CMD ["curl", "-s", "--fail", "http://localhost:8081/health", "||", "exit 1"]
