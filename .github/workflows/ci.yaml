@@ -25,7 +25,7 @@ jobs:
       requirements-files: 'requirements.txt requirements-tests.txt'
 
   validate-dockerfile:
-    if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
+    # if: "${{ !contains(github.event.commits[0].message, 'chore(release):') }}"
     needs:
       - lint-python-code
       - unit-tests
