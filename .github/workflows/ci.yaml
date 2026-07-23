@@ -41,4 +41,5 @@ jobs:
     with:
       python-version: '3.13'
       sonar-qualitygate-wait: true
+      artifact-coverage-directory: '.'
     secrets: inherit
