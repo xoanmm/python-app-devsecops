@@ -11,7 +11,7 @@ COPY application /service/app/application
 RUN apk --no-cache --update upgrade && \
       apk --no-cache --update add build-base curl npm && \
       pip install "pip==26.1.2" && \
-      pip install --only-binary :all: -r requirements.txt
+      pip install --only-binary :all: --require-hashes -r requirements.txt
 
 EXPOSE 8081
 
