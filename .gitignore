@@ -140,3 +140,6 @@ dmypy.json
 *.tfstate.backup
 .terraform.tfstate.lock.info
 .terraform
+
+# Node.js
+node_modules/

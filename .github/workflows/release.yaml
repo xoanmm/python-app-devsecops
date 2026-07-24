@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   semantic-release:
-    uses: xoanmm/actions/.github/workflows/release.yml@v0
+    uses: xoanmm/actions/.github/workflows/release.yml@8fb1ad6e65f9792a66e3ab6e5060cf4503b1e610
     if: "${{ github.event.workflow_run.conclusion == 'success' && !contains(github.event.commits[0].message, 'chore(release):') }}"
     secrets: inherit
     permissions:

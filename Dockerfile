@@ -9,8 +9,8 @@ COPY requirements.txt /service/app
 COPY application /service/app/application
 
 RUN apk --no-cache --update add build-base curl npm && \
-      pip install --upgrade pip && \
-      pip install -r requirements.txt
+      pip install "pip==24.3.1" && \
+      pip install --only-binary :all: -r requirements.txt
 
 EXPOSE 8081
 
